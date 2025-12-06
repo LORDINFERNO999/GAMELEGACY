@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #f5f5f5;
+  background: url("IMAGENES/body.webp") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.container {
+  color: #bdbdbd;
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+header nav {
+  background-color: #1f1f1f;
+  padding: 1rem 0;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 0;
+  margin: 0;
+}
+
+header nav a {
+  color: #f5f5f5;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+header nav a:hover {
+  color: #ff5722;
+  text-decoration: underline;
+}
+
+h1 {
+    font-family: 'Bebas Neue', sans-serif;
+  font-size: 80px;
+  font-weight: 900;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #7b2ff7, #f107a3);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 4px 20px rgba(123, 47, 247, 0.4);
+  letter-spacing: 3px;
+  text-align: center;
+  margin: 0cap;
+}
+
+h2, h3 {
+  text-align: center;
+  color: #8a4fff; 
+  font-family: 'Orbitron', sans-serif; 
+  font-size: 20px;
+  letter-spacing: 1px; 
+  text-transform: uppercase; 
+  text-shadow: 0 0 10px rgba(138, 79, 255, 0.6);
+}
+
+
+p {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.formulario {
+  background-color: #1e1e1e;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.formulario label {
+  display: block;
+  margin-bottom: 0.3rem;
+  color: #ffcc80;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+  width: 100%;
+  padding: 0.6rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #292929;
+  color: #f5f5f5;
+}
+
+.formulario input:focus,
+.formulario textarea:focus,
+.formulario select:focus {
+  outline: 2px solid #ff9800;
+  background-color: #333;
+}
+
+.botones {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff5722;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #e64a19;
+}
+
+.btn.cancelar {
+  background-color: #757575;
+}
+
+.btn.cancelar:hover {
+  background-color: #616161;
+}
+
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem 0;
+  background-color: #1f1f1f;
+  color: #bdbdbd;
+}

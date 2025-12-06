@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  font-family: "Poppins", Arial, sans-serif;
+  color: #eaeaea;
+  background: url("IMAGENES/body.webp") center/cover fixed no-repeat;
+  backdrop-filter: blur(3px);
+  text-align: center;
+}
+
+header {
+  background: rgba(10, 10, 20, 0.7);
+  padding: 15px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.7);
+  z-index: 100;
+  backdrop-filter: blur(10px);
+}
+
+header h1 {
+  color: #9b6bff;
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin: 0 30px;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  margin-right: 40px;
+  justify-content: flex-end;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+nav a:hover {
+  color: #b28cff;
+}
+
+nav .activo {
+  color: #c29cff;
+  font-weight: 700;
+}
+
+main, .container {
+  padding-top: 120px;
+}
+
+.container {
+  max-width: 850px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: rgba(20, 20, 40, 0.55);
+  backdrop-filter: blur(12px);
+  border-radius: 14px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+  animation: fadeIn 0.7s ease forwards;
+}
+
+h2 {
+  color: #c29cff;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 0.9rem;
+  border-radius: 10px;
+  background: rgba(40, 40, 60, 0.65);
+  border: 1px solid #5a5a7a;
+  color: white;
+  transition: 0.3s;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #b28cff;
+  box-shadow: 0 0 8px #b28cff;
+  outline: none;
+}
+
+textarea {
+  resize: none;
+  height: 130px;
+}
+
+.botones {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  padding: 0.7rem 1.6rem;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(135deg, #9b6bff, #7a3cff);
+  transition: 0.3s ease;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  transform: scale(1.07);
+  box-shadow: 0 0 12px #b28cff;
+}
+
+footer {
+  background: rgba(10, 10, 20, 0.7);
+  padding: 20px;
+  margin-top: 40px;
+  color: #bbb;
+  font-size: 0.9rem;
+  border-top: 1px solid #222;
+  backdrop-filter: blur(7px);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
